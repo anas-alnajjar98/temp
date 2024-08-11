@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ELECTION_PROJECTModelStoreContainer" CdmEntityContainer="ELECTION_PROJECTEntities">
+    <EntitySetMapping Name="USERS">
+      <EntityTypeMapping TypeName="ELECTION_PROJECTModel.USER">
+        <MappingFragment StoreEntitySet="USERS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NationalNumber" ColumnName="NationalNumber" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="ElectionArea" ColumnName="ElectionArea" />
+          <ScalarProperty Name="Governorate" ColumnName="Governorate" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="ElectionPlace" ColumnName="ElectionPlace" />
+          <ScalarProperty Name="LocalElections" ColumnName="LocalElections" />
+          <ScalarProperty Name="PartyElections" ColumnName="PartyElections" />
+          <ScalarProperty Name="whitePaperLocalElections" ColumnName="whitePaperLocalElections" />
+          <ScalarProperty Name="whitePaperPartyElections" ColumnName="whitePaperPartyElections" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GeneralListCandidates">
+      <EntityTypeMapping TypeName="ELECTION_PROJECTModel.GeneralListCandidate">
+        <MappingFragment StoreEntitySet="GeneralListCandidates">
+          <ScalarProperty Name="listname" ColumnName="listname" />
+          <ScalarProperty Name="GeneralListingID" ColumnName="GeneralListingID" />
+          <ScalarProperty Name="CandidateName" ColumnName="CandidateName" />
+          <ScalarProperty Name="CandidateID" ColumnName="CandidateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GeneralListings">
+      <EntityTypeMapping TypeName="ELECTION_PROJECTModel.GeneralListing">
+        <MappingFragment StoreEntitySet="GeneralListing">
+          <ScalarProperty Name="Sucess" ColumnName="Sucess" />
+          <ScalarProperty Name="img" ColumnName="img" />
+          <ScalarProperty Name="NumberOfVotes" ColumnName="NumberOfVotes" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GeneralListingID" ColumnName="GeneralListingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LocalLists">
+      <EntityTypeMapping TypeName="ELECTION_PROJECTModel.LocalList">
+        <MappingFragment StoreEntitySet="LocalList">
+          <ScalarProperty Name="img" ColumnName="img" />
+          <ScalarProperty Name="Sucess" ColumnName="Sucess" />
+          <ScalarProperty Name="Governorate" ColumnName="Governorate" />
+          <ScalarProperty Name="ElectionArea" ColumnName="ElectionArea" />
+          <ScalarProperty Name="NumberOfVotes" ColumnName="NumberOfVotes" />
+          <ScalarProperty Name="ListName" ColumnName="ListName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LocalListCandidates">
+      <EntityTypeMapping TypeName="ELECTION_PROJECTModel.LocalListCandidate">
+        <MappingFragment StoreEntitySet="LocalListCandidates">
+          <ScalarProperty Name="Sucess" ColumnName="Sucess" />
+          <ScalarProperty Name="img" ColumnName="img" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="listname" ColumnName="listname" />
+          <ScalarProperty Name="typeofCandidates" ColumnName="typeofCandidates" />
+          <ScalarProperty Name="LocalListingID" ColumnName="LocalListingID" />
+          <ScalarProperty Name="NumberOfVotesCandidate" ColumnName="NumberOfVotesCandidate" />
+          <ScalarProperty Name="ElectionArea" ColumnName="ElectionArea" />
+          <ScalarProperty Name="Governorate" ColumnName="Governorate" />
+          <ScalarProperty Name="NationalNumber" ColumnName="NationalNumber" />
+          <ScalarProperty Name="CandidateName" ColumnName="CandidateName" />
+          <ScalarProperty Name="CandidateID" ColumnName="CandidateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

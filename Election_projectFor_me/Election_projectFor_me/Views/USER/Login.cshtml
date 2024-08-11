@@ -1,0 +1,50 @@
+﻿@model Election_projectFor_me.Models.USER
+
+@{
+    ViewBag.Title = "Login";
+}
+
+
+<form action="#!">
+
+    <div class="row gy-3 overflow-hidden">
+        <div class="col-12">
+            <div class="form-floating mb-3">
+                @Html.TextBoxFor(m => m.NationalNumber, new { @class = "form-control", placeholder = "National Number" })
+                @Html.ValidationMessageFor(m => m.NationalNumber, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating mb-3">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "E-mail Address" })
+                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" name="remember_me" id="remember_me">
+                <label class="form-check-label text-secondary" for="remember_me">
+                    Keep me logged in
+                </label>
+            </div>
+
+
+            <div class="col-12">
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-register">تسجيل الدخول </button>
+                </div>
+            </div>
+
+
+            <div class="col-12">
+                <div class="form-check">
+
+                    <p class="text-center text-muted mt-5 mb-0">
+                        هل لديك حساب ؟  @Html.ActionLink("تسجيل الدخول ", "LoginUser", "USER", new { area = "" }, new { @class = "fw-bold text-body" })
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+</form>
